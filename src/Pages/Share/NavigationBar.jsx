@@ -41,7 +41,7 @@ const NavigationBar = () => {
               Statistics
             </NavLink>
             <NavLink
-              to="/applied-jobs"
+              to="/appliedjobs"
               className={({ isActive }) => (isActive ? "active" : "")}
               onClick={() => setToggle(false)}
             >

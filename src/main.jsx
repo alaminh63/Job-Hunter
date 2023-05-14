@@ -6,6 +6,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./Layout/Root";
 import Home from "./Pages/Home/Home";
 import { DataProvider } from "./Context/Context";
+import AppliedJobs from "./Pages/AppliedJobs";
+import LoderApplied from "./components/LoaderApplied";
+
 
 const router = createBrowserRouter([
   {
@@ -15,6 +18,11 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+      },
+      {
+        path: "/appliedjobs",
+        element: <AppliedJobs></AppliedJobs>,
+        loader: LoderApplied,
       },
     ],
   },
