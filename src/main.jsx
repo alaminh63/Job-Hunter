@@ -9,15 +9,23 @@ import { DataProvider } from "./Context/Context";
 import AppliedJobs from "./Pages/AppliedJobs";
 import LoderApplied from "./components/LoaderApplied";
 import JobDetails from "./components/JobDetails";
+import Blog from "./Pages/Blog";
+import ErrorPages from "./Pages/Share/ErrorPages";
+import Statistics from "./Pages/Statistics";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+    errorElement: <ErrorPages />,
     children: [
       {
         path: "/",
         element: <Home></Home>,
+      },
+      {
+        path: "/statistics",
+        element: <Statistics />,
       },
       {
         path: "/appliedjobs",
@@ -27,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: "/job-details/:id",
         element: <JobDetails />,
+      },
+      {
+        path: "/blog",
+        element: <Blog />,
       },
     ],
   },
