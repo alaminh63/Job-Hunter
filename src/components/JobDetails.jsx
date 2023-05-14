@@ -18,7 +18,7 @@ const JobDetails = () => {
   };
 
   return (
-    <section>
+    <section className="px-3">
       <h1 className="text-center font-bold text-3xl py-20">Job Details</h1>
       <br></br>
       <div className="md:grid md:grid-cols-3 gap-8 -full">

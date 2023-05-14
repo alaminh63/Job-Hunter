@@ -7,7 +7,7 @@ const FilterdPageCard = ({ card }) => {
     card;
 
   return (
-    <article className="my-[12px] md:flex gap-5 p-[30px] border rounded-md">
+    <article className="my-[12px]  md:flex gap-5 p-[30px] border rounded-md">
       <div className="bg-[#F4F4F4] md:w-[240px] w-full h-[240px] flex justify-center items-center">
         <img className="h-[50px] w-[150px] rounded-md" src={logo} alt="" />
       </div>
