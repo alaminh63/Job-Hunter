@@ -8,7 +8,7 @@ import Home from "./Pages/Home/Home";
 import { DataProvider } from "./Context/Context";
 import AppliedJobs from "./Pages/AppliedJobs";
 import LoderApplied from "./components/LoaderApplied";
-
+import JobDetails from "./components/JobDetails";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +23,10 @@ const router = createBrowserRouter([
         path: "/appliedjobs",
         element: <AppliedJobs></AppliedJobs>,
         loader: LoderApplied,
+      },
+      {
+        path: "/job-details/:id",
+        element: <JobDetails />,
       },
     ],
   },
