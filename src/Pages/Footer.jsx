@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="bg-slate-950 ">
         <div className="max-w-[1240px] mx-auto grid md:grid-cols-5 text-gray-300 gap-6 mt-10 mb-10 px-6">
           <div>
-            <h1 className="text-2xl font-bold mt-5">JobFinder</h1>
+            <h1 className="text-2xl font-bold mt-5">JobHunter</h1>
             <p className="py-4">
               There are many variations of passages of Lorem Ipsum , but the
               majority have suffered alteration in some form.
